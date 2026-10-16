@@ -192,8 +192,6 @@ export const projects = [
     technologies: [
       'Python',
       'YOLOv8n',
-      'DistilBERT',
-      'Tesseract OCR',
       'LabelImg',
       'Computer Vision',
       'NLP',
