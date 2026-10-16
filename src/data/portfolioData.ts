@@ -185,6 +185,34 @@ export const projects = [
     featured: false,
   },
   {
+    title: 'DARPAN: Unmasking Dark Patterns in Booking Platforms through UI Analysis',
+    description:
+      'An academic group research project focused on identifying potentially manipulative user interface patterns on booking and travel websites using computer vision and natural language processing.',
+    technologies: [
+      'Python',
+      'YOLOv8n',
+      'DistilBERT',
+      'Tesseract OCR',
+      'LabelImg',
+      'Computer Vision',
+      'NLP',
+    ],
+    features: [
+      'Dataset collection and preparation of booking/travel website screenshots',
+      'UI element annotation using LabelImg with defined dark pattern labeling rules',
+      'Training and evaluation of YOLOv8n object-detection model for visual UI pattern identification',
+      'Prediction fusion combining visual-model outputs with text-classification results',
+      'Research paper, technical documentation, and experimental result reporting',
+      'Project task coordination and component integration across the team workflow',
+    ],
+    context:
+      'Academic group research project (AI, Computer Vision & NLP). Contributions listed describe my individual involvement; overall system and research outcomes reflect the team\u2019s work.',
+    liveUrl: null,
+    buttonLabel: null,
+    githubUrl: null,
+    featured: false,
+  },
+  {
     title: 'Task Tracker Application',
     description:
       'An Android task management application with CRUD functionality for creating, viewing, updating, and deleting tasks.',
