@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, FolderGit2, Download, ArrowDown } from 'lucide-react';
 import { personalInfo } from '@/data/portfolioData';
+import ParticleNetwork from './ParticleNetwork';
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -32,6 +33,7 @@ export default function Hero() {
     >
       {/* Background accents */}
       <div className="absolute inset-0 -z-10">
+        <ParticleNetwork />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
         <div
