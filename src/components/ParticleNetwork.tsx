@@ -59,8 +59,7 @@ export default function ParticleNetwork() {
       canvas.height = h * dpr;
       canvas.style.width = `${w}px`;
       canvas.style.height = `${h}px`;
-      ctx.setTransform(0, 0, 0, 0, 0, 0);
-      ctx.scale(dpr, dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       particles = initParticles(w, h);
     };
 
@@ -74,14 +73,14 @@ export default function ParticleNetwork() {
       for (let i = 0; i < pts.length; i++) {
         const p = pts[i];
         const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * 3);
-        grad.addColorStop(0, `hsla(${p.hue}, 80%, 65%, 0.35)`);
+        grad.addColorStop(0, `hsla(${p.hue}, 85%, 68%, 0.55)`);
         grad.addColorStop(1, `hsla(${p.hue}, 80%, 65%, 0)`);
         ctx.fillStyle = grad;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius * 3, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.fillStyle = `hsla(${p.hue}, 80%, 70%, 0.5)`;
+        ctx.fillStyle = `hsla(${p.hue}, 85%, 72%, 0.7)`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fill();
@@ -93,7 +92,7 @@ export default function ParticleNetwork() {
           const dy = pts[i].y - pts[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < maxDist) {
-            const opacity = (1 - dist / maxDist) * 0.12;
+            const opacity = (1 - dist / maxDist) * 0.2;
             const avgHue = (pts[i].hue + pts[j].hue) / 2;
             ctx.strokeStyle = `hsla(${avgHue}, 70%, 65%, ${opacity})`;
             ctx.lineWidth = 0.5;
