@@ -14,7 +14,7 @@ export default function ParticleNetwork() {
 
   const initParticles = useCallback(
     (w: number, h: number): Particle[] => {
-      const count = Math.min(55, Math.max(20, Math.floor((w * h) / 16000)));
+      const count = Math.min(25, Math.max(12, Math.floor((w * h) / 35000)));
       const particles: Particle[] = [];
       for (let i = 0; i < count; i++) {
         const isBlue = Math.random() > 0.45;
