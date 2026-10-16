@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <section id="education" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <SectionHeading sectionNumber="05" title="Education & Certifications" />
+        <SectionHeading sectionNumber="06" title="Education & Certifications" />
 
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {/* Education card */}

@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 md:py-28 bg-white/[0.015]">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <SectionHeading sectionNumber="06" title={contactText.heading} />
+        <SectionHeading sectionNumber="07" title={contactText.heading} />
 
         <div className="max-w-2xl mt-12">
           <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-10">
