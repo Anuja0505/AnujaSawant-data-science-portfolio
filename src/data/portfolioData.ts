@@ -210,7 +210,7 @@ export const projects = [
       'Academic group research project (AI, Computer Vision & NLP). Contributions listed describe my individual involvement; overall system and research outcomes reflect the team\u2019s work.',
     liveUrl: null,
     buttonLabel: null,
-    githubUrl: null,
+    githubUrl: 'https://github.com/akshay18v/DARPAN',
     featured: false,
   },
   {
