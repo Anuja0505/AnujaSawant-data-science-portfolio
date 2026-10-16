@@ -1,4 +1,4 @@
-import { ExternalLink, FolderGit2, CheckCircle2, Github } from 'lucide-react';
+import { ExternalLink, FolderGit2, CheckCircle2, Github, type LucideIcon } from 'lucide-react';
 import { projects } from '@/data/portfolioData';
 import SectionHeading from './SectionHeading';
 
@@ -86,7 +86,10 @@ export default function Projects() {
                 className="group bg-[#111827] border border-white/5 rounded-xl p-6 hover:border-sky-400/20 transition-colors duration-200"
               >
                 <div className="flex items-center gap-2.5 mb-3">
-                  <FolderGit2 size={18} className="text-sky-400" />
+                  {(() => {
+                    const Icon = (project as { projectIcon?: LucideIcon }).projectIcon || FolderGit2;
+                    return <Icon size={18} className="text-sky-400" />;
+                  })()}
                   <h3 className="text-base font-semibold text-white leading-snug">
                     {project.title}
                   </h3>

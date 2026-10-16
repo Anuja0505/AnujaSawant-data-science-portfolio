@@ -14,6 +14,7 @@ import {
   Layout,
   Database,
   Wrench,
+  Smartphone,
 } from 'lucide-react';
 
 export const personalInfo = {
@@ -215,12 +216,18 @@ export const projects = [
   {
     title: 'Task Tracker Application',
     description:
-      'An Android task management application with CRUD functionality for creating, viewing, updating, and deleting tasks.',
-    technologies: [],
-    features: [],
+      'An Android task management application using SQLite for persistent local data storage, enabling users to create, view, update, and delete tasks through a simple and user-friendly interface.',
+    technologies: ['Android', 'Java', 'SQLite'],
+    features: [
+      'CRUD operations — create, view, update, and delete task records',
+      'SQLite database for local persistent task storage',
+      'Task management through the application\u2019s interface',
+      'Straightforward Android UI for interacting with tasks',
+    ],
     liveUrl: null,
     buttonLabel: null,
     githubUrl: null,
+    projectIcon: Smartphone,
     featured: false,
   },
 ];
