@@ -226,7 +226,7 @@ export const projects = [
     ],
     liveUrl: null,
     buttonLabel: null,
-    githubUrl: null,
+    githubUrl: 'https://github.com/Anuja0505/MediTime',
     projectIcon: Smartphone,
     featured: false,
   },
