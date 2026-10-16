@@ -128,6 +128,7 @@ export const projects = [
     ],
     liveUrl: 'https://smartstock-anuja.streamlit.app/',
     buttonLabel: 'View Live Project',
+    githubUrl: null,
     featured: true,
   },
   {
@@ -144,6 +145,7 @@ export const projects = [
     ],
     liveUrl: 'https://employee-attrition-prediction-anuja.streamlit.app/',
     buttonLabel: 'View Live Project',
+    githubUrl: null,
     featured: true,
   },
   {
@@ -162,6 +164,24 @@ export const projects = [
     context: 'Developed during my Infosys Springboard AI-domain internship.',
     liveUrl: null,
     buttonLabel: 'Project Overview',
+    githubUrl: null,
+    featured: false,
+  },
+  {
+    title: 'E-Commerce Customer Intelligence & Retention Analysis',
+    description:
+      'Analyzed the Brazilian E-Commerce Public Dataset by Olist using PostgreSQL to uncover insights into revenue trends, product category performance, customer retention, delivery performance, payment methods, and seller performance.',
+    technologies: ['PostgreSQL', 'SQL', 'pgAdmin 4'],
+    features: [
+      'Analyzed 96,096 unique customers',
+      'Identified a 3.12% repeat-purchase rate under the project\u2019s analysis definition',
+      'Measured an 8.11% late-delivery rate among analyzed delivered orders',
+      'Identified Health & Beauty as the highest-revenue product category in the analysis',
+      'Applied SQL joins, aggregations, CTEs, window functions, and data validation',
+    ],
+    liveUrl: null,
+    buttonLabel: null,
+    githubUrl: 'https://github.com/Anuja0505/ecommerce-customer-intelligence-sql',
     featured: false,
   },
   {
@@ -172,6 +192,7 @@ export const projects = [
     features: [],
     liveUrl: null,
     buttonLabel: null,
+    githubUrl: null,
     featured: false,
   },
 ];

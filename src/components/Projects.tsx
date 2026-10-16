@@ -1,4 +1,4 @@
-import { ExternalLink, FolderGit2, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, FolderGit2, CheckCircle2, Github } from 'lucide-react';
 import { projects } from '@/data/portfolioData';
 import SectionHeading from './SectionHeading';
 
@@ -94,6 +94,19 @@ export default function Projects() {
                 <p className="text-sm text-gray-400 leading-relaxed mb-4">
                   {project.description}
                 </p>
+                {project.features.length > 0 && (
+                  <ul className="space-y-1.5 mb-4">
+                    {project.features.map((f, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <CheckCircle2
+                          size={14}
+                          className="text-sky-400/70 flex-shrink-0 mt-0.5"
+                        />
+                        <span className="text-xs text-gray-400 leading-relaxed">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {project.technologies.length > 0 && (
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
@@ -118,6 +131,17 @@ export default function Projects() {
                   >
                     {project.buttonLabel}
                     <ExternalLink size={14} />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-sky-400 hover:text-sky-300 transition-colors"
+                  >
+                    View on GitHub
+                    <Github size={14} />
                   </a>
                 )}
               </div>
