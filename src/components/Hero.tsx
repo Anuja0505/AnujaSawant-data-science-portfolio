@@ -32,7 +32,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden"
     >
       {/* Background accents */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0" aria-hidden="true">
         <ParticleNetwork />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
@@ -46,7 +46,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 md:px-8 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 w-full">
         <div className="max-w-3xl">
           <p className="text-sm md:text-base text-sky-400 font-medium tracking-wide mb-4 animate-fade-in-up">
             {personalInfo.headline}
@@ -110,7 +110,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <button
         onClick={scrollToProjects}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500 hover:text-sky-400 transition-colors animate-bounce-slow"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-gray-500 hover:text-sky-400 transition-colors animate-bounce-slow"
         aria-label="Scroll down"
       >
         <ArrowDown size={20} />
